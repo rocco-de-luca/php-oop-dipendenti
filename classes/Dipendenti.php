@@ -17,11 +17,11 @@ class Employee {
     }
 public function visualizza_Dipendenti()
 {
-    $result = ['Name'=>$this->name,]
+    $result = ['Name'=>$this->name,];
 }
 }
 
-class Worker extends 
+class Worker extends Employee
 {
     public $notturno;
     function __construct($_matricola, $_nome, $_cognome, $_luogoNascita, $_dataNascita, $_residenza, $_notturno){
@@ -37,7 +37,7 @@ class Manager extends Employee{
             throw new Exception('is not a number');
         }
         else{
-            $this->num = $_num;
+            $this->num = $num;
         }
     }
 }

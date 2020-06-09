@@ -1,9 +1,9 @@
+
 <?php
 
 include_once __DIR__ . '/classes/Employees.php';
 
 $director = new Manager();
-
 var_dump($director);
 
 try {
@@ -12,3 +12,5 @@ try {
 catch (Exception $e) {
     echo 'error' . $e->getMessage();
 }
+
+
